@@ -1,0 +1,76 @@
+@import "../sass/mixins.scss";
+@import "../sass/variables.scss";
+
+.container {
+    @include flex(center, center, row);
+    gap: 15px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+    button {
+        background-color: $green;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        height: 30px;
+        @include flex(center, center, row);
+        cursor: pointer;
+
+        svg {
+            width: 10px;
+        }
+    }
+
+    button[disabled] {
+        background-color: $dullGreen;
+        cursor: no-drop;
+    }
+
+    input {
+        height: 30px;
+        width: 50px;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        color: $darkBlue;
+    }
+
+    p {
+        height: 10px;
+        align-items: center;
+        text-align: center;
+        color: $darkBlue;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        gap: 10px;
+        button {
+            width: 29px;
+            height: 25px;
+        }
+        input {
+            font-size: medium;
+        }
+        p {
+            font-size: medium;
+        }
+    }
+}
+
+ @media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .container {
+        padding: 0.5%;
+        gap: 10px;
+
+        input {
+            width: 35px;
+            height: 25px;
+        }
+
+    }
+} 
