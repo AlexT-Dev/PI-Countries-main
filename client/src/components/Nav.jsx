@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom';
 import { getByName } from '../actions';
 import style from '../styles/Nav.module.scss';
-import earth from '../images/earth.svg';
-import { AiOutlineSearch } from "react-icons/ai";
+import earth from '../images/mundo.png';
+
 
 function Nav() {
     const dispatch = useDispatch();
@@ -18,6 +18,7 @@ function Nav() {
 
     return (
         <div>
+        
             <div className={style.topnav}>
                 {location.pathname === '/countries/' ?
                     <>
@@ -28,8 +29,8 @@ function Nav() {
                             Add Activity
                         </Link>
                         <div className={style.search}>
-                            <input type="text" placeholder="Country..." onChange={handleChange} />
-                            <AiOutlineSearch className={style.submit} />
+                            <input type="text" placeholder="Search Country..." onChange={handleChange} />
+                           
                         </div>
                     </>
                     : location.pathname === '/activity' ?
@@ -38,7 +39,7 @@ function Nav() {
                                 <img src={earth} className={style.img} alt='earth' />
                             </Link>
                             <Link to='/countries/' className={style.home}>
-                                Home
+                                Countries
                             </Link>
                         </div>
                         :
@@ -46,9 +47,9 @@ function Nav() {
                             <Link to='/countries/' >
                                 <img src={earth} className={style.img} alt='earth' />
                             </Link>
-                            <Link to='/countries/' className={style.home}>
-                                Home
-                            </Link>
+                            {/* <Link to='/countries/' className={style.home}>
+                                Welcome
+                            </Link> */}
                             <Link to='/activity' className={style.activity}>
                                 Add Activity
                             </Link>

@@ -2,12 +2,12 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getDetail } from '../actions'
 import style from '../styles/Card.module.scss';
-import flyingAirplane from '../images/flyingAirplane.svg';
+
 
 function Card(props) {
     const dispatch = useDispatch()
     const details = useSelector(state => state.details)
-    const loading = useSelector(state => state.loading)
+    
 
     useEffect(() => {
         dispatch(getDetail(props.match.params.id))
@@ -25,11 +25,12 @@ function Card(props) {
     return (
         <div>
             <div className={style.card}>
-                {loading ? <img src={flyingAirplane} /> : details !== null ?
+                
                     <div>
                         <div className={style.flag}>
                             <h2>{details.name}</h2>
                             <img src={details.image} alt={details.name} className={style.imagen} />
+                            
                         </div>
                         <div className={style.cont}>
                             <div className={style.detail}>
@@ -59,7 +60,7 @@ function Card(props) {
                             </div>
                         </div>
                     </div> : <p>Country not found</p>
-                }
+               
             </div>
         </div>
     )

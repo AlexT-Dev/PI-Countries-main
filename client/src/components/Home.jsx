@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { getActivity, byContinent, byPopulation, byOrder, getCountries, byActivity } from '../actions/index';
 import style from '../styles/Home.module.scss';
 import Paginado from './Paginado'
+import Nav from './Nav';
 
 function Home() {
     const dispatch = useDispatch()
@@ -52,6 +53,7 @@ function Home() {
 
     return (
         <div>
+           <Nav />
             <div className={style.filters}>
                 <div className={style.filter}>
                     <select onChange={handleOrderPopulation}>
@@ -96,6 +98,7 @@ function Home() {
                             <Link to={'/countries/' + e.id} key={e.id}>
                                 <div  className={style.card}>
                                     <p>{e.name}</p>
+                                    <p>{e.id}</p>
                                     <img src={e.image} alt={e.name} />
                                 </div>
                             </Link>

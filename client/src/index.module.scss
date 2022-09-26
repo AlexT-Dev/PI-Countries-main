@@ -1,0 +1,46 @@
+@import "./sass/variables.scss";
+
+body {
+  
+  background-attachment: fixed;
+            margin: 0px;
+           padding: 0px;
+  background-image: url("C:\Users\lenovo\Documents\GitHub\PI-Countries-main\client\src\images\myhome.jpg");
+   background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+select {
+  background-color: #1f2120;
+  color: white;
+  border-style: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin: 3px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Signika-Bold";
+  src: url("./fonts/Signika-Bold.ttf") format("TrueType");
+  
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// ::-webkit-scrollbar {
+//   width: 8px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: $darkBlue;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: $green;
+//   border-radius: 20px;
+// }

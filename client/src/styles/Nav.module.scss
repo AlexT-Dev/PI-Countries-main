@@ -4,21 +4,27 @@
 .topnav {
     margin-bottom: 2%;
     @include flex(center, space-around, row);
-    background-color: $darkBlue;
+    background-color:rgb(50, 53, 53);
+    
 
     .img {
         padding-top: 2px;
         padding-bottom: 2px;
-        &:hover {
-            cursor: url("../images/airplane.png"), auto;
+         max-width: 50px;
+        max-height: 50px;
+         &:hover {
+                      color: rgb(20, 20, 3);
+           background-color: coral;
+           box-shadow: 0 0 4px 3px #e8cea9;
         }
     }
 
     .home {
-        color: $white;
+        color:rgb(225, 155, 63);
         font-size: 22px;
+        text-decoration: none;
         &:hover {
-            cursor: url("../images/airplane.png"), auto;
+            
             text-decoration: none;
         }
 

@@ -1,18 +1,20 @@
 @import "../sass/mixins.scss";
 @import "../sass/variables.scss";
 
+
+
 .containerCountry {
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-column-gap: 20px;
     justify-content: center;
-
+    
     .card {
         background: $green;
         @include size(100%, 200px);
         text-align: center;
         cursor: pointer;
-        color: $white;
+        color:antiquewhite;
         margin: 2%;
         padding-top: 4%;
         border-radius: 3%;
@@ -20,7 +22,7 @@
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.178);
-            cursor: url("../images/airplane.png"), auto;
+            
         }
 
         img {
@@ -37,7 +39,7 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 10px;
         }
     }
 }

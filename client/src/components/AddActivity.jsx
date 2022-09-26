@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import { getActivity, getCountries, postActivity } from '../actions/index'
 import style from '../styles/AddActivity.module.scss';
 import Swal from 'sweetalert2'
+import Nav from './Nav';
 
 function valida(input) {
     let errors = {}
@@ -117,6 +118,7 @@ function AddActivity() {
 
     return (
         <div className={style.form}>
+         <Nav />
             <div className={style.contenedor}>
                 <div>
                     <h2>Add Activity</h2>
