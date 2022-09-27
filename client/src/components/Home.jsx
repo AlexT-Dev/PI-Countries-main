@@ -98,7 +98,7 @@ function Home() {
                             <Link to={'/countries/' + e.id} key={e.id}>
                                 <div  className={style.card}>
                                     <p>{e.name}</p>
-                                    <p>{e.id}</p>
+                                    
                                     <img src={e.image} alt={e.name} />
                                 </div>
                             </Link>

@@ -104,9 +104,10 @@ function AddActivity() {
             countries: []
         })
         history.push('/countries')
+        
         Swal.fire({
             title: 'Activity created successfully',
-            confirmButtonColor: "#34a57f"}/* ).then(function(){ 
+            confirmButtonColor: "#716add"}/* ).then(function(){ 
                 window.location.replace('');
             } */
         ) 
@@ -121,7 +122,7 @@ function AddActivity() {
          <Nav />
             <div className={style.contenedor}>
                 <div>
-                    <h2>Add Activity</h2>
+                    <h2>ADD ACTIVITY</h2>
                     <div>
                         <form onSubmit={handleSubmit}>
                             <div className={style.act}>

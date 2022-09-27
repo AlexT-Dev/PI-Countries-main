@@ -9,16 +9,19 @@
     grid-column-gap: 20px;
     justify-content: center;
     
+    
     .card {
-        background: $green;
+        background: #475049;
         @include size(100%, 200px);
         text-align: center;
         cursor: pointer;
-        color:antiquewhite;
+        color:rgb(239, 167, 78);
+        
         margin: 2%;
         padding-top: 4%;
         border-radius: 3%;
         box-shadow: 10px 10px 5px -4px rgba(36, 36, 36, 0.81);
+        text-decoration: none;
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.178);
@@ -26,20 +29,22 @@
         }
 
         img {
-            border: 1px solid $lightGrey;
+            border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
             @include size(150px, 100px);
+            
         }
 
         a {
             padding: 1%;
-            text-decoration: none;
-            color: $white;
+            
+            color:rgb(239, 167, 78);
         }
 
         p {
-            font-size: 10px;
+            font-size: 17px;  // Tamaño de letra del Nombre de país en cada etiqueta
+            text-decoration: none;
         }
     }
 }
@@ -51,6 +56,7 @@
             width: 300px;
             p {
                 font-size: medium;
+                text-decoration: none;
             }
         }
     }
@@ -72,6 +78,7 @@
         grid-template-columns: 350px 350px;
         grid-column-gap: 20px;
         justify-content: center;
+        text-decoration: none;
         .card {
             width: 300px;
             p {

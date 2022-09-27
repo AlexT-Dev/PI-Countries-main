@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getDetail } from '../actions'
 import style from '../styles/Card.module.scss';
+import Nav from './Nav';
 
 
 function Card(props) {
@@ -24,6 +25,7 @@ function Card(props) {
 
     return (
         <div>
+         <Nav />
             <div className={style.card}>
                 
                     <div>
@@ -59,7 +61,7 @@ function Card(props) {
                                 </div>
                             </div>
                         </div>
-                    </div> : <p>Country not found</p>
+                    </div>  <p></p>
                
             </div>
         </div>

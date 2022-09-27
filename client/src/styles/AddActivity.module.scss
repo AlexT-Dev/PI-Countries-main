@@ -9,9 +9,11 @@
     background: $green;
     border-radius: 3%;
     margin: auto;
+    box-shadow: 10px 10px 2px -2px #848382;
 
     h2 {
         padding: 3%;
+        color:rgb(245, 174, 82);
     }
 
     .season,
@@ -25,6 +27,8 @@
         label {
             text-align: start;
             width: 80px;
+            color:rgb(245, 174, 82);
+            font-size: 20px;
         }
     }
 
@@ -38,17 +42,22 @@
             border: none;
             border-radius: 8px;
             width: 50%;
+            margin-left: 15px;
+            font-size: 20px;
         }
 
         label {
+            color:rgb(245, 174, 82);
             width: 100px;
             text-align: start;
+            font-size: 20px;
         }
     }
 
     select {
         margin: 2%;
         @include size(50%, 30px);
+        font-size: 15px;
     }
 
     button[type="submit"] {
@@ -57,12 +66,14 @@
         border-radius: 10px;
         border: none;
         color: $white;
-        background-color: $lightGreen;
+        background-color:rgb(245, 174, 82);
         cursor: pointer;
 
         &:hover {
-            background-color: $white;
-            color: $lightGreen;
+            background-color: coral;
+            transition: 300ms;
+             box-shadow: 0 0 4px 3px #e8cea9;
+             color: black;
         }
     }
 
@@ -102,6 +113,7 @@
         h2 {
             padding: 4%;
             font-size: large;
+            color:rgb(245, 174, 82);
         }
 
         label,
@@ -117,6 +129,7 @@
         select {
             font-size: small;
             width: 70%;
+            
         }
 
         button[type="submit"] {
