@@ -5,7 +5,7 @@ import App from './App';
 import { Provider } from 'react-redux';
 import store from './store/index.jsx';
 import { BrowserRouter } from 'react-router-dom'
-import './fonts/Signika-Bold.ttf'
+
 
 ReactDOM.render(
   <React.StrictMode>

@@ -43,8 +43,11 @@
         }
 
         p {
-            font-size: 17px;  // Tamaño de letra del Nombre de país en cada etiqueta
+            font-size: 20px;  // Tamaño de letra del Nombre de país en cada etiqueta
             text-decoration: none;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: azure;
         }
     }
 }
@@ -66,13 +69,13 @@
         flex-wrap: wrap;
         .filter {
             select {
-                font-size: small;
+                font-size: 20px;
             }
         }
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1500px) {
+@media screen and (min-width: 1000px) and (max-width: 1700px) {
     .containerCountry {
         display: grid;
         grid-template-columns: 350px 350px;
@@ -91,9 +94,18 @@
 .filters {
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
-
+    margin-bottom: 15px;
+    font-size: 20px;
+    
     .filter {
         margin-right: 1%;
-    }
+        
+        
+       }
+    .select {
+        background: #57564e;
+        font-size: 20px;
+        color: #ebf2ec;
+        font-weight: bold;
+    }   
 }

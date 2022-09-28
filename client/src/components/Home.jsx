@@ -56,13 +56,13 @@ function Home() {
            <Nav />
             <div className={style.filters}>
                 <div className={style.filter}>
-                    <select onChange={handleOrderPopulation}>
+                    <select  className={style.select} onChange={handleOrderPopulation}>
                         <option value='Max' key='Max'>Max population</option>
                         <option value='Min' key='Min'>Min population</option>
                     </select>
                 </div>
                 <div className={style.filter}>
-                    <select onChange={handleContinents}>
+                    <select className={style.select}onChange={handleContinents}>
                         <option value='All' key='All'>All continents</option>
                         <option value='Africa' key='Africa'>Africa</option>
                         <option value='Antarctica' key='Antarctica'>Antarctica</option>
@@ -74,7 +74,7 @@ function Home() {
                     </select>
                 </div>
                 <div className={style.filter}>
-                    <select onChange={handleActivity}>
+                    <select className={style.select} onChange={handleActivity}>
                         <option value='All'>All activities</option>
                         {activity.map(e => (
                             <option value={e} key={e}>{e}</option>
@@ -82,7 +82,7 @@ function Home() {
                     </select>
                 </div>
                 <div className={style.filter}>
-                    <select onChange={handleOrder}>
+                    <select className={style.select} onChange={handleOrder}>
                         <option value='Asc' key='Asc'>A-Z</option>
                         <option value='Desc' key='Desc'>Z-A</option>
                     </select>

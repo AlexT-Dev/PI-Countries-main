@@ -22,25 +22,12 @@ select {
   cursor: pointer;
 }
 
-@font-face {
-  font-family: "Signika-Bold";
-  src: url("./fonts/Signika-Bold.ttf") format("TrueType");
+// @font-face {
+//   font-family: "ARLRDBD";
+//   src: url("./fonts/ARLRDBD.TTF") format("TrueType");
   
-}
+// }
 
 a:hover {
   text-decoration: none;
 }
-
-// ::-webkit-scrollbar {
-//   width: 8px;
-// }
-
-// ::-webkit-scrollbar-track {
-//   background: $darkBlue;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//   background: $green;
-//   border-radius: 20px;
-// }

@@ -122,7 +122,7 @@ function AddActivity() {
          <Nav />
             <div className={style.contenedor}>
                 <div>
-                    <h2>ADD ACTIVITY</h2>
+                    <h2>ACTIVITY</h2>
                     <div>
                         <form onSubmit={handleSubmit}>
                             <div className={style.act}>
