@@ -68,10 +68,43 @@
 }
 
 .error {
-    color: $red;
-    font-size: 20px;
-    @include flex(center, center, row);
+    color: rgb(214, 226, 48);
+    font-size: 15px;
+    @include flex(center, end, row);
+    margin-right: 10px;
+    text-transform:uppercase;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    
 }
+
+//Para parpadeo de NOT FOUND
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
 
 @media (max-width: 1000px) {
     .topnav {

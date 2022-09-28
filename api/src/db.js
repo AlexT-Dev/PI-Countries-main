@@ -7,11 +7,13 @@ const {
   DB_USER, DB_PASSWORD, DB_HOST,
 } = process.env;
 
+//Realiza conexión con la base de datos
+
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/countries`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
-const basename = path.basename(__filename);
+const basename = path.basename(__filename); //Obtiene el nombre del archivo con la ruta absoluta completa del archivo actualmente ejecutado
 
 const modelDefiners = [];
 

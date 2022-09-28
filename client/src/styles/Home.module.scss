@@ -32,7 +32,7 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
-            @include size(150px, 100px);
+            @include size(100px, 75px);
             
         }
 
@@ -43,7 +43,7 @@
         }
 
         p {
-            font-size: 20px;  // Tamaño de letra del Nombre de país en cada etiqueta
+            font-size: 15px;  // Tamaño de letra del Nombre de país en cada etiqueta
             text-decoration: none;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bold;

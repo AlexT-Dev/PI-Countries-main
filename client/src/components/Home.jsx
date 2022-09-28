@@ -13,8 +13,8 @@ function Home() {
     const countries = useSelector(state => state.countries)
     const activity = useSelector(state => state.activity)
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const [countriesPerPage, setCountriesPerPage] = useState(9);
+    const [currentPage, setCurrentPage] = useState(1);  //En cada página
+    const [countriesPerPage, setCountriesPerPage] = useState(9); //Tendrá 9 países
 
     const max = Math.round(countries.length / countriesPerPage);
 
@@ -98,7 +98,7 @@ function Home() {
                             <Link to={'/countries/' + e.id} key={e.id}>
                                 <div  className={style.card}>
                                     <p>{e.name}</p>
-                                    
+                                    <p>{e.continent}</p>
                                     <img src={e.image} alt={e.name} />
                                 </div>
                             </Link>

@@ -14,6 +14,7 @@ function Nav() {
 
     function handleChange(e) {
         dispatch(getByName(e.target.value))
+        
     }
 
     return (
@@ -55,8 +56,11 @@ function Nav() {
                             </Link>
                         </>
                 }
+                {error !== "" && <p className={style.error}  >{error}</p>}
             </div>
-            {error !== "" && <p className={style.error}>{error}</p>}
+            
+              
+           
         </div>
     )
 }
