@@ -1,5 +1,5 @@
 @import "../sass/mixins.scss";
-@import "../sass/variables.scss";
+
 
 .topnav {
     margin-bottom: 2%;
@@ -31,7 +31,7 @@
     }
 
     .activity {
-        color: $white;
+        color: white;
         font-size: 22px;
         text-decoration: none;
     }
@@ -119,7 +119,7 @@
 
         .home {
             width: 50px;
-            color: $white;
+            color:  white;
             font-size: medium;
         }
 

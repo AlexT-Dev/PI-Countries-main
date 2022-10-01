@@ -1,5 +1,5 @@
 @import "../sass/mixins.scss";
-@import "../sass/variables.scss";
+
 
 .container {
     @include flex(center, center, row);
@@ -8,7 +8,7 @@
     margin-bottom: 1%;
     
     button {
-        background-color: $green;
+        background-color:  #475049;;
         border: none;
         padding: 5px 10px;
         border-radius: 3px;
@@ -35,7 +35,7 @@
         text-align: center;
         border: none;
         border-radius: 3px;
-        color: $darkBlue;
+        color: #3a6ea7;;
     }
 
     p {

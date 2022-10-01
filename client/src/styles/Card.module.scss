@@ -1,5 +1,5 @@
 @import "../sass/mixins.scss";
-@import "../sass/variables.scss";
+
 
 .card {
     @include flex(center, center, row);
@@ -35,7 +35,7 @@
         
         img {
             @include size(400px, 300px);
-            border: 1px solid $lightGrey;
+            border: 1px solid  #ddd;
             border-radius: 4px;
             padding: 10px;
         }
@@ -75,7 +75,7 @@
             img {
                 margin: auto;
                 @include size(200px, 120px);
-                border: 1px solid $lightGrey;
+                border: 1px solid  #ddd;
                 padding: 5px;
             }
         }
@@ -120,7 +120,7 @@
             img {
                 margin: auto;
                 @include size(200px, 120px);
-                border: 1px solid $lightGrey;
+                border: 1px solid  #ddd;
                 padding: 5px;
             }
         }
@@ -163,7 +163,7 @@
 
             img {
                 @include size(250px, 150px);
-                border: 1px solid $lightGrey;
+                border: 1px solid  #ddd;
                 padding: 5px;
             }
         }
@@ -202,7 +202,7 @@
 
             img {
                 @include size(250px, 150px);
-                border: 1px solid $lightGrey;
+                border: 1px solid  #ddd;
                 padding: 5px;
             }
         }

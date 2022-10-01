@@ -14,6 +14,8 @@ import {
 
 const url = 'http://localhost:3001' 
 
+//El type define el tipo de evento que se va a ejecutar
+//propiedad payload, en caso de que neceisten enviar información para que se realice el cambio
 
 export function getCountries() {
     return async function (dispatch) {
