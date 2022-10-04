@@ -11,7 +11,7 @@ function Nav() {
     const location = useLocation();
 
     const error = useSelector(state => state.error)
-
+    // Busca lo que contenga el search Country
     function handleChange(e) {
         dispatch(getByName(e.target.value))
         

@@ -95,7 +95,6 @@ function AddActivity() {
         e.preventDefault();
         dispatch(postActivity(input))
 
-       /*  alert('enviado') */
         setInput({
             name: '',
             difficulty: '',
@@ -103,6 +102,7 @@ function AddActivity() {
             season: '',
             countries: []
         })
+
         history.push('/countries')
         
         Swal.fire({
